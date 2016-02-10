@@ -1,0 +1,14 @@
+#click{
+  font-size: 20px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+ }
+
+body{
+  /*width:100%;*/
+}
+
+#image-slide{
+  /*clip: rect(0px,60px,200px,0px);*/
+}
