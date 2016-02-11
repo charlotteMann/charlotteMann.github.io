@@ -11,18 +11,18 @@
     <p class="upload-spiel">
       Thank you so much for taking part in this project.<br><br>
       To nominate a home I need your name and a contact email.
-      I'd like you to tell me something about this home and who lives there, and if you have them you can upload pictures.    <br>
+      I'd like you to tell me something about this home and who lives there, and if you have them you can upload pictures.<br>
     </p>
     <form id="uploadForm">
-      Name: <input type="text" name="name" placeholder="Name"><br>
-      Email: <input type="email" name="email" placeholder="Email"><br>
+      Name: <input type="text" name="name" placeholder="Name" required><br>
+      Email: <input type="email" name="email" placeholder="Email" required><br>
       Is it your home? (check box if yes)
-      <input type="checkbox" id="yourHome"><br>
-      <input type="text" name="whosHome"><br>
+      <input type="checkbox" id="yourHome" required><br>
+      <input type="text" name="whosHome" required><br>
       Have they agreed to be part of this project?
-      <input type="text" name="agreed"><br>
+      <input type="text" name="agreed" required><br>
       Tell me here about the home you wish to nominate:
-      <input type="text" name="aboutHome"><br>
+      <input type="text" name="aboutHome" required><br>
       <br>
       Upload picture: <input type="file" onchange="previewFile()"><br>
       <img id="previewPic" src="" height="200" alt=" ">
