@@ -19,3 +19,7 @@ function changeImg(i){
   // document.body.style.backgroundImage=imgLink;
 
 }
+// 
+// function blockMove() {
+//      event.preventDefault() ;
+// }
