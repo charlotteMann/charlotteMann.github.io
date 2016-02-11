@@ -17,7 +17,9 @@ body{
 #image-slide{
   min-height: 120vw;
   min-width: 120vh;
-  /*right:20px;*/
+  position: relative;
+  right:250%;
+  bottom:80%;
 
 }
 
