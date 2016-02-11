@@ -9,14 +9,16 @@ body{
   /*background-position: 80% 80%;
   background-repeat: no-repeat;
   min-height: 120vw;
-  min-width: 120vh;
-  overflow:hidden;*/
+  min-width: 120vh;*/
+  overflow:hidden;
+  overflow-x: hidden;
 }
 
 #image-slide{
   min-height: 120vw;
   min-width: 120vh;
-  right:20px;
+  /*right:20px;*/
+
 }
 
 #image-container{
