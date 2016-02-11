@@ -6,18 +6,18 @@
  }
 
 body{
-  background-position: 80% 80%;
+  /*background-position: 80% 80%;
   background-repeat: no-repeat;
   min-height: 120vw;
   min-width: 120vh;
-  overflow:hidden;
+  overflow:hidden;*/
 }
 
-/*#image-slide{
+#image-slide{
   min-height: 120vw;
   min-width: 120vh;
   right:20px;
-}*/
+}
 
 #image-container{
   width: 100%;
