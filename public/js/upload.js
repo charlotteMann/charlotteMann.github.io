@@ -16,9 +16,10 @@ function previewFile(){
   } else {
       preview.src = "";
   }
+  document.getElementById('previewPic').style.display="block";
 }
 
-previewFile();
+// previewFile();
 
 document.getElementById('uploadForm').addEventListener('submit', function(e){
   e.preventDefault();
