@@ -1,4 +1,6 @@
-var i=1;
+var i=2;
+
+changeImg(1);
 
 setInterval(
   function(){
@@ -19,7 +21,7 @@ function changeImg(i){
   // document.body.style.backgroundImage=imgLink;
 
 }
-// 
+//
 // function blockMove() {
 //      event.preventDefault() ;
 // }

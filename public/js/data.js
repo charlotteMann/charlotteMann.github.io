@@ -6,7 +6,7 @@ db.on("value",function(snapshot){
 
   var uploadsHtml = uploadsArray.reduce(function(html,uploadId){
   var uploadsList = uploadsObj[uploadId];
-    return html+=uploadsList.name;
+    return html+="<img class='upload-image' src="+uploadsList.image+"></img><p class='upload-name'>"+uploadsList.name +'</p>';
   }, "");
     document.getElementById('data-spiel').innerHTML=uploadsHtml;
     console.log(uploadsHtml);
