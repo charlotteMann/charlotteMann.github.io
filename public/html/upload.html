@@ -22,7 +22,7 @@
           <input type="email"  class="form-control" name="email" placeholder="Email" required>
         </fieldset>
         <fieldset class="form-group" id="checkbox-q">
-          Is it your home? (check is yes)
+          Is it your home? (check if yes)
           <input type="checkbox" id="yourHome" name="yourHome" required><br>
           <!-- <input id="radio-button-yes" checked="checked" name="yes-or-no" type="radio" name="theirHome" />
           <label for="radio-button-yes">Yes</label>
@@ -30,26 +30,25 @@
           <label for="radio-button-no">No</label> -->
         </fieldset>
         <fieldset class="form-group">
-          <input type="text"  class="form-control" name="whosHome" placeholder="if no whos home is it?" required>
+          <input type="text"  class="form-control" name="whosHome" placeholder="if no who's home is it?" required>
         </fieldset>
         <fieldset class="form-group" id="checkbox-q">
-          Have agreed to be part of this project?
+          Have they agreed to be part of this project? (check if yes)
           <!-- <input id="agreed-radio-button-yes" checked="checked" name="yes-or-no" type="radio" value="Yes" />
           <label for="agreed-radio-button-yes">Yes</label>
           <input id="agreed-radio-button-no" name="yes-or-no" type="radio" value="No" />
           <label for="agreed-radio-button-no">No</label> -->
-          <input type="checkbox" id="agreed" required><br>
+          <input type="checkbox" id="agreed" name="agreed" required><br>
           <!-- <input type="text"  class="form-control" name="agreed" required> -->
         <fieldset class="form-group">
-          <input type="text"  class="form-control" name="aboutHome" placeholder="          Tell me here about the home you wish to nominate:
-" required>
+          <textarea type="text" class="form-control" name="aboutHome" rows="5" placeholder="Tell me here about the home you wish to nominate" required></textarea>
         </fieldset>
         <fieldset class="form-group">
         Upload picture <input type="file" onchange="previewFile()">
         <img id="previewPic" src="" height="200" alt=" ">
         </fieldset>
         <fieldset class="form-group">
-        <input type="submit">
+        <input class="btn btn-success" type="submit">
       </fieldset>
       </form>
     </div>

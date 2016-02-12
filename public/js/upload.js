@@ -27,7 +27,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(e){
     name: uploadForm.name.value,
     email: uploadForm.email.value,
     yourHome: uploadForm.yourHome.checked,
-    agreed: uploadForm.agreed.value,
+    agreed: uploadForm.agreed.checked,
     aboutHome: uploadForm.aboutHome.value,
     image: imageBase64
   };
