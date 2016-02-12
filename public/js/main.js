@@ -29,9 +29,9 @@ launchIntoFullscreen(document.documentElement); // the whole page
     }
 
     document.addEventListener("click", function(){
-        //window full screen tonen
+      // document.getElementById('click-link').style.display=none;
+        //window full screen mode
         launchIntoFullscreen(document.documentElement);
-        //window niet meer focussen (zorgt dat melding niet meer op scherm komt wanneer er over 2de window wordt gehovered
         $(document).blur();
     }, true);
 })();
