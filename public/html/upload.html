@@ -5,30 +5,54 @@
 
     <!-- <meta charset="utf-8"> -->
     <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
   <body>
-    <p class="upload-spiel">
-      Thank you so much for taking part in this project.<br><br>
-      To nominate a home I need your name and a contact email.
-      I'd like you to tell me something about this home and who lives there, and if you have them you can upload pictures.<br>
-    </p>
-    <form id="uploadForm">
-      Name: <input type="text" name="name" placeholder="Name" required><br>
-      Email: <input type="email" name="email" placeholder="Email" required><br>
-      Is it your home? (check box if yes)
-      <input type="checkbox" id="yourHome" required><br>
-      <input type="text" name="whosHome" required><br>
-      Have they agreed to be part of this project?
-      <input type="text" name="agreed" required><br>
-      Tell me here about the home you wish to nominate:
-      <input type="text" name="aboutHome" required><br>
-      <br>
-      Upload picture: <input type="file" onchange="previewFile()"><br>
-      <img id="previewPic" src="" height="200" alt=" ">
-      <br>
-      <input type="submit"><br>
-    </form>
+    <div class="update">
+      <p class="upload-spiel">
+        Thank you so much for taking part in this project.<br><br>
+        To nominate a home I need your name and a contact email.
+        I'd like you to tell me something about this home and who lives there, and if you have them you can upload pictures.<br>
+      </p>
+      <form class="form-horizontal" id="uploadForm">
+        <fieldset class="form-group">
+          <input type="text"  class="form-control" name="name" placeholder="Name" required>
+        <fieldset class="form-group">
+          <input type="email"  class="form-control" name="email" placeholder="Email" required>
+        </fieldset>
+        <fieldset class="form-group" id="checkbox-q">
+          Is it your home? (check is yes)
+          <input type="checkbox" id="yourHome" name="yourHome" required><br>
+          <!-- <input id="radio-button-yes" checked="checked" name="yes-or-no" type="radio" name="theirHome" />
+          <label for="radio-button-yes">Yes</label>
+          <input id="radio-button-no" name="yes-or-no" type="radio" name="Not their home" />
+          <label for="radio-button-no">No</label> -->
+        </fieldset>
+        <fieldset class="form-group">
+          <input type="text"  class="form-control" name="whosHome" placeholder="if no whos home is it?" required>
+        </fieldset>
+        <fieldset class="form-group" id="checkbox-q">
+          Have agreed to be part of this project?
+          <!-- <input id="agreed-radio-button-yes" checked="checked" name="yes-or-no" type="radio" value="Yes" />
+          <label for="agreed-radio-button-yes">Yes</label>
+          <input id="agreed-radio-button-no" name="yes-or-no" type="radio" value="No" />
+          <label for="agreed-radio-button-no">No</label> -->
+          <input type="checkbox" id="agreed" required><br>
+          <!-- <input type="text"  class="form-control" name="agreed" required> -->
+        <fieldset class="form-group">
+          <input type="text"  class="form-control" name="aboutHome" placeholder="          Tell me here about the home you wish to nominate:
+" required>
+        </fieldset>
+        <fieldset class="form-group">
+        Upload picture <input type="file" onchange="previewFile()">
+        <img id="previewPic" src="" height="200" alt=" ">
+        </fieldset>
+        <fieldset class="form-group">
+        <input type="submit">
+      </fieldset>
+      </form>
+    </div>
 
   </body>
 
