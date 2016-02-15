@@ -28,8 +28,8 @@
 
 /*data*/
 .upload-image{
-  /*height: 18em;*/
-  /*width:100%;*/
+  height: 18em;
+  max-width:100%;
 }
 
 @media(max-width: 768px) {
