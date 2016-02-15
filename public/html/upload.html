@@ -11,26 +11,28 @@
   <body>
     <div class="formy">
       <p class="upload-spiel">
-        Thank you so much for taking part in this project.<br><br>
+        <br>
+        <h4>Thank you so much for taking part in this project.</h4><br>
         To nominate a home I need your name and a contact email.
         I'd like you to tell me something about this home and who lives there, and if you have them you can upload pictures.<br>
       </p>
+
       <form class="form-horizontal" id="uploadForm">
         <fieldset class="form-group">
-          <input type="text"  class="form-control" name="name" placeholder="Name" required>
+          <input type="text"  class="form-control" name="name" placeholder="Name *" required>
         <fieldset class="form-group">
-          <input type="email"  class="form-control" name="email" placeholder="Email" required>
+          <input type="email"  class="form-control" name="email" placeholder="Email *" required>
         </fieldset>
         <fieldset class="form-group" id="checkbox-q">
-          Is it your home? (check if yes)
-          <input type="checkbox" id="yourHome" name="yourHome" required><br>
+          Is it your home? * (check if yes)
+          <input type="checkbox" id="yourHome" name="yourHome"><br>
           <!-- <input id="radio-button-yes" checked="checked" name="yes-or-no" type="radio" name="theirHome" />
           <label for="radio-button-yes">Yes</label>
           <input id="radio-button-no" name="yes-or-no" type="radio" name="Not their home" />
           <label for="radio-button-no">No</label> -->
         </fieldset>
         <fieldset class="form-group">
-          <input type="text"  class="form-control" name="whosHome" placeholder="if no who's home is it?" required>
+          <input type="text"  class="form-control" name="whosHome" placeholder="if no who's home is it?">
         </fieldset>
         <fieldset class="form-group" id="checkbox-q">
           Have they agreed to be part of this project? (check if yes)
@@ -38,10 +40,10 @@
           <label for="agreed-radio-button-yes">Yes</label>
           <input id="agreed-radio-button-no" name="yes-or-no" type="radio" value="No" />
           <label for="agreed-radio-button-no">No</label> -->
-          <input type="checkbox" id="agreed" name="agreed" required><br>
+          <input type="checkbox" id="agreed" name="agreed"><br>
           <!-- <input type="text"  class="form-control" name="agreed" required> -->
         <fieldset class="form-group">
-          <textarea type="text" class="form-control" name="aboutHome" rows="5" placeholder="Tell me here about the home you wish to nominate" required></textarea>
+          <textarea type="text" class="form-control" name="aboutHome" rows="5" placeholder="Tell me here about the home you wish to nominate *" required></textarea>
         </fieldset>
         <fieldset class="form-group">
         Upload picture <input type="file" onchange="previewFile()">
@@ -51,6 +53,8 @@
         <input class="btn btn-success" type="submit">
       </fieldset>
       </form>
+      <div id="validation">
+      </div>
     </div>
 
   </body>
