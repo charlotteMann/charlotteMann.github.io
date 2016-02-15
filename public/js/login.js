@@ -1,5 +1,13 @@
 var db = new Firebase("https://charlottemann2.firebaseio.com/");
 
+var uid = localStorage.getItem('UID');
+
+(function load(){
+if (uid){
+  window.location.replace('./data.html');
+}
+})();
+
 document.getElementById('loginForm').addEventListener('submit', function(e){
   e.preventDefault();
   var email=loginForm.elements.email.value;
