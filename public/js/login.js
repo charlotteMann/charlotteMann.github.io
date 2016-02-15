@@ -21,7 +21,7 @@ var validateRestLoginDetails = function(email,pw){
       $("#incorrect-p")[0].innerHTML = "Incorrect email address or password!";
     } else {
       console.log("Authenticated successfully with payload:", authData);
-      // localStorage.setItem('RUID',authData.auth.uid);
+      localStorage.setItem('UID',authData.auth.uid);
       window.location.replace('./data.html');
     }
   });
