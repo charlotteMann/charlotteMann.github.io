@@ -24,3 +24,7 @@ body{
    height: 100%;
    margin: 0;
  }
+
+#img-link, #image-container, #image-slide{
+  display:block;
+}

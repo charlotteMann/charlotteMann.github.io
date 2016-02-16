@@ -15,13 +15,5 @@ setInterval(
   }, 3000);
 
 function changeImg(i){
-  console.log("yo");
-  // var imgLink= "url(../../images/img"+i+".jpeg)";
-  document.getElementById("image-slide").src = "../../images/img"+i+".jpeg";
-  // document.body.style.backgroundImage=imgLink;
-
+  document.getElementById("image-slide").src = "./images/img"+i+".jpeg";
 }
-//
-// function blockMove() {
-//      event.preventDefault() ;
-// }
