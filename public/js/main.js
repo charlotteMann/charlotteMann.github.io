@@ -1,7 +1,7 @@
 
     document.getElementById('click-link').onclick = function(){
         document.getElementById('click-container').style.display="none";
-
+        document.getElementById('stylesheet').href="public/css/images.css";
         makeFullscreen();
         $(document).blur();
     };
