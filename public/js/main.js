@@ -1,37 +1,39 @@
 
-// Find the right method, call on correct element
-function launchIntoFullscreen(element) {
-  if(element.requestFullscreen) {
-    element.requestFullscreen();
-  } else if(element.mozRequestFullScreen) {
-    element.mozRequestFullScreen();
-  } else if(element.webkitRequestFullscreen) {
-    element.webkitRequestFullscreen();
-  } else if(element.msRequestFullscreen) {
-    element.msRequestFullscreen();
+    document.getElementById('click-link').onclick = function(){
+        document.getElementById('click-container').style.display="none";
+
+        makeFullscreen();
+        $(document).blur();
+    };
+
+function  makeFullscreen() {
+  elem = document.documentElement;
+  if (!document.fullscreenElement && !document.mozFullScreenElement &&
+    !document.webkitFullscreenElement && !document.msFullscreenElement) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      elem.msRequestFullscreen();
+    } else if (elem.mozRequestFullScreen) {
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
   }
 }
+document.getElementById('image-container').onclick = function () {
+  console.log("close");
+    exitFullscreen();
+};
 
-// Launch fullscreen for browsers that support it!
-launchIntoFullscreen(document.documentElement); // the whole page
-(function(){
-    function launchIntoFullscreen(element) {
-        console.log("launchintofullscreen");
-        if(element.requestFullscreen) {
-            element.requestFullscreen();
-        } else if(element.mozRequestFullScreen) {
-            element.mozRequestFullScreen();
-        } else if(element.webkitRequestFullscreen) {
-            element.webkitRequestFullscreen();
-        } else if(element.msRequestFullscreen) {
-            element.msRequestFullscreen();
-        }
-    }
-
-    document.addEventListener("click", function(){
-      // document.getElementById('click-link').style.display=none;
-        //window full screen mode
-        launchIntoFullscreen(document.documentElement);
-        $(document).blur();
-    }, true);
-})();
+function exitFullscreen(){
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  }
+}

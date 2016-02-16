@@ -6,13 +6,14 @@
   display: flex;
    align-items: center;
    justify-content: center;
-   /*height: 100%;*/
 }
 
-html, body, #click-container {
+html, body, #click-container{
     height: 100%;
 }
 /*end of centers div vertically and horizontally*/
 #click-link{
   color:#555;
+  cursor: pointer;
+  cursor: hand;
 }
