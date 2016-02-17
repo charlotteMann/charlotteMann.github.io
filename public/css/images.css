@@ -46,7 +46,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
   #image-slide{
     zoom:46%;
-    right:450%;
+    right:470%;
   }
 }
 
