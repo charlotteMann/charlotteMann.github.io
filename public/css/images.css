@@ -26,7 +26,7 @@ body{
     min-width: 120vh;
     zoom:37%;
     position: relative;
-    right:90%;
+    right:40%;
     bottom:80%;
   }
 /*}*/
@@ -45,7 +45,7 @@ and (max-device-width : 1024px) {
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
   #image-slide{
-    zoom:38%;
+    zoom:46%;
     right:450%;
   }
 }
