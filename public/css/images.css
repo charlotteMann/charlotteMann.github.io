@@ -47,13 +47,14 @@ and (max-device-width : 1024px) {
       zoom:44%;
       right:450%;
     }
+  }
 
   /*iphone 6*/
   @media only screen
   and (min-device-width : 375px)
   and (max-device-width : 667px) {
     #image-slide{
-      zoom:50%;
+      zoom:48%;
       right:450%;
     }
 }
