@@ -44,7 +44,7 @@ and (max-device-width : 1024px) {
   and (min-device-width : 414px)
   and (max-device-width : 776px) {
     #image-slide{
-      zoom:44%;
+      zoom:44.1%;
       right:200%;
     }
   }
