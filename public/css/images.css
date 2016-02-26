@@ -37,7 +37,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
   #image-slide{
     zoom:43%;
-    right:200%;
+    right:450%;
   }}
 
   @media only screen
@@ -55,7 +55,7 @@ and (max-device-width : 1024px) {
   and (max-device-width : 667px) {
     #image-slide{
       zoom:48%;
-      right:350%;
+      right:450%;
     }
 }
 /*iphone portrait and landscape*/
