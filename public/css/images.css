@@ -37,7 +37,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
   #image-slide{
     zoom:43%;
-    right:450%;
+    right:200%;
   }}
 
   @media only screen
@@ -45,7 +45,7 @@ and (max-device-width : 1024px) {
   and (max-device-width : 776px) {
     #image-slide{
       zoom:44%;
-      right:450%;
+      right:200%;
     }
   }
 
