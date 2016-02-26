@@ -53,7 +53,7 @@ and (max-device-width : 1024px) {
   and (min-device-width : 375px)
   and (max-device-width : 667px) {
     #image-slide{
-      zoom:48%;
+      zoom:55%;
       right:450%;
     }
 
@@ -63,7 +63,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
   #image-slide{
     zoom:46%;
-    right:450%;
+    right:600%;
   }
 }
 
