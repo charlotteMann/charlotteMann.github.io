@@ -1,6 +1,10 @@
 
 /*index*/
 
+#img-link, #image-container, #image-slide{
+  display:none;
+}
+
 /*centers div vertically and horizontally*/
 #click-container{
   display: flex;

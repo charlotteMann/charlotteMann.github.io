@@ -40,6 +40,23 @@ and (max-device-width : 1024px) {
     right:200%;
   }}
 
+  @media only screen
+  and (min-device-width : 414px)
+  and (max-device-width : 776px) {
+    #image-slide{
+      zoom:44%;
+      right:450%;
+    }
+
+  /*iphone 6*/
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+    #image-slide{
+      zoom:44%;
+      right:450%;
+    }
+
 /*iphone portrait and landscape*/
 @media only screen
 and (min-device-width : 320px)
@@ -49,6 +66,8 @@ and (max-device-width : 480px) {
     right:450%;
   }
 }
+
+
 
 
 #image-container{
