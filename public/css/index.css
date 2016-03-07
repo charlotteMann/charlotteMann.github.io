@@ -23,11 +23,31 @@ html, body, #click-container{
 }
 
 @media (orientation: portrait) {
-  body {
+  #img-link {
+    display:none;
+  }
+  #rotateQ{
+    display:block;
+  }
+
+  /*body {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
+  }*/
+}
+
+@media (orientation: landscape) {
+  #img-link {
+    display:block;
   }
+  #rotateQ{
+    display:none;
+  }
+}
+
+#rotateQ{
+  display:none;
 }
