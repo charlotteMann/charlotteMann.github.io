@@ -5,6 +5,18 @@ document.getElementById('click-link').onclick = function(){
     $(document).blur();
 };
 
+window.addEventListener('orientationchange', function () {
+    if (window.orientation == -90) {
+        document.getElementById('click-container').className = 'orientright';
+    }
+    if (window.orientation == 90) {
+        document.getElementById('click-container').className = 'orientleft';
+    }
+    if (window.orientation == 0) {
+        document.getElementById('click-container').className = '';
+    }
+}, true);
+
 function  makeFullscreen() {
   elem = document.documentElement;
   if (!document.fullscreenElement && !document.mozFullScreenElement &&
