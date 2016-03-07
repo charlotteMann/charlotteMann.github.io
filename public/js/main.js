@@ -1,10 +1,17 @@
 
-    document.getElementById('click-link').onclick = function(){
-        document.getElementById('click-container').style.display="none";
-        document.getElementById('stylesheet').href="public/css/images.css";
-        makeFullscreen();
-        $(document).blur();
-    };
+document.getElementById('click-link').onclick = function(){
+    document.getElementById('click-container').style.display="none";
+    document.getElementById('stylesheet').href="public/css/images.css";
+    makeFullscreen();
+    $(document).blur();
+};
+
+screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
+if (screen.lockOrientationUniversal("landscape-primary")) {
+  console.log("orientation was locked");
+} else {
+  console.log("orientation lock failed");
+}
 
 function  makeFullscreen() {
   elem = document.documentElement;
