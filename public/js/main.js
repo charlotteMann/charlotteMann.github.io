@@ -1,3 +1,11 @@
+$(document).ready(function () {
+  function reorient(e) {
+    var portrait = (window.orientation % 180 == 0);
+    $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
+  }
+  window.onorientationchange = reorient;
+  window.setTimeout(reorient, 0);
+});
 
 document.getElementById('click-link').onclick = function(){
     document.getElementById('click-container').style.display="none";
@@ -5,13 +13,6 @@ document.getElementById('click-link').onclick = function(){
     makeFullscreen();
     $(document).blur();
 };
-
-screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
-if (screen.lockOrientationUniversal("landscape-primary")) {
-  console.log("orientation was locked");
-} else {
-  console.log("orientation lock failed");
-}
 
 function  makeFullscreen() {
   elem = document.documentElement;
