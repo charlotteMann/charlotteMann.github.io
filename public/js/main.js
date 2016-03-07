@@ -10,8 +10,8 @@ if(window.innerHeight > window.innerWidth){
   document.getElementById('click').style.display="none";
   document.getElementById('rotate').style.display="block"
 } else {
-  document.getElementById('click').style.display="block";
   document.getElementById('rotate').style.display="none"
+  document.getElementById('click').style.display="block";
 }
 
 // window.addEventListener('orientationchange', function () {
