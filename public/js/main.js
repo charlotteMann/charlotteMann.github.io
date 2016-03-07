@@ -9,6 +9,9 @@ console.log(document.getElementById('click').text);
 if(window.innerHeight > window.innerWidth){
   document.getElementById('click').style.display="none";
   document.getElementById('rotate').style.display="block"
+} else {
+  document.getElementById('click').style.display="block";
+  document.getElementById('rotate').style.display="none"
 }
 
 // window.addEventListener('orientationchange', function () {
