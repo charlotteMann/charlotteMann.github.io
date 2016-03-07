@@ -23,11 +23,12 @@ html, body, #click-container{
 }
 
 @media (orientation: portrait) {
-  #click-container {
+  #click {
     display:none;
   }
   #rotateQ{
-    display:block;
+    display:flex;
+    color:black;
   }
 
   /*body {
@@ -40,14 +41,16 @@ html, body, #click-container{
 }
 
 @media (orientation: landscape) {
-  #click-container {
-    display:block;
+  #click {
+    display:flex;
+
   }
   #rotateQ{
     display:none;
+    color:black;
   }
 }
 
-#rotateQ{
+/*#rotateQ{
   display:none;
-}
+}*/
