@@ -5,32 +5,22 @@ document.getElementById('click-link').onclick = function(){
     $(document).blur();
 };
 
-setInterval(
-  function(){
-      checkOrientation();
-    }, 500);
+// setInterval(
+//   function(){
+//       checkOrientation();
+//     }, 500);
 
-function checkOrientation(){
-    console.log(document.getElementById('click').text);
-    if(window.innerHeight > window.innerWidth){
-      document.getElementById('click').style.display="none";
-      document.getElementById('rotate').style.display="block"
-    } else {
-      document.getElementById('rotate').style.display="none"
-      document.getElementById('click').style.display="block";
-    }
-}
-// window.addEventListener('orientationchange', function () {
-//     if (window.orientation == -90) {
-//         document.getElementById('click-container').className = 'orientright';
+// function checkOrientation(){
+//     console.log(document.getElementById('click').text);
+//     if(window.innerHeight > window.innerWidth){
+//       document.getElementById('click').style.display="none";
+//       document.getElementById('rotate').style.display="block"
+//     } else {
+//       document.getElementById('rotate').style.display="none"
+//       document.getElementById('click').style.display="block";
 //     }
-//     if (window.orientation == 90) {
-//         document.getElementById('click-container').className = 'orientleft';
-//     }
-//     if (window.orientation == 0) {
-//         document.getElementById('click-container').className = '';
-//     }
-// }, true);
+// }
+
 
 function  makeFullscreen() {
   elem = document.documentElement;
