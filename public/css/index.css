@@ -22,6 +22,16 @@ html, body, #click-container{
   cursor: hand;
 }
 
+.orientleft #shell {
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin:160px 160px;
+}
+
+.orientright #shell {
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin:230px 230px;
+} 
+/*
 @media (orientation: portrait) {
   #click {
     display:none;
@@ -38,9 +48,9 @@ html, body, #click-container{
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
   }*/
-}
+/*}*/
 
-@media (orientation: landscape) {
+/*@media (orientation: landscape) {
   #click {
     display:flex;
 
@@ -49,7 +59,7 @@ html, body, #click-container{
     display:none;
     color:black;
   }
-}
+}*/
 
 /*#rotateQ{
   display:none;
