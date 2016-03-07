@@ -23,7 +23,7 @@ html, body, #click-container{
 }
 
 @media (orientation: portrait) {
-  #img-link {
+  #click-container {
     display:none;
   }
   #rotateQ{
@@ -40,7 +40,7 @@ html, body, #click-container{
 }
 
 @media (orientation: landscape) {
-  #img-link {
+  #click-container {
     display:block;
   }
   #rotateQ{
@@ -48,6 +48,6 @@ html, body, #click-container{
   }
 }
 
-/*#rotateQ{
+#rotateQ{
   display:none;
-}*/
+}
