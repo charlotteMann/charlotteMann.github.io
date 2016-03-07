@@ -5,8 +5,10 @@ document.getElementById('click-link').onclick = function(){
     $(document).blur();
 };
 
+console.log(document.getElementById('click').text);
 if(window.innerHeight > window.innerWidth){
-  document.getElementById('click').text= "Please rotate phone/tablet";
+  document.getElementById('click').style.display="none";
+  document.getElementById('rotate').style.display="block"
 }
 
 // window.addEventListener('orientationchange', function () {
