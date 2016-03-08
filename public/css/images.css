@@ -25,7 +25,7 @@ body{
     min-height: 120vw;
     min-width: 120vh;
     zoom:37%;
-    position: relative;
+    /*position: relative;*/
     right:5%;
     bottom:80%;
   }
