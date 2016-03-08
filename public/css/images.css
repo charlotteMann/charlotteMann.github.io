@@ -1,5 +1,4 @@
 
-
 body{
   overflow:hidden;
   overflow-x: hidden;
@@ -29,7 +28,7 @@ body{
     right:5%;
     bottom:80%;
   }
-}
+/*}*/
 
 /*ipad portrait and landscape*/
 @media only screen
@@ -40,7 +39,7 @@ and (max-device-width : 1024px)
     zoom:43%;
     right:200%;
   }}
-  
+
   @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
@@ -52,32 +51,13 @@ and (max-device-width : 1024px)
 
   @media only screen
   and (min-device-width : 414px)
-  and (max-device-width : 776px)
-   and (orientation : portrait){
+  and (max-device-width : 776px){
     #image-slide{
       zoom:44.1%;
       right:200%;
     }
   }
-   @media only screen
-  and (min-device-width : 414px)
-  and (max-device-width : 776px)
-   and (orientation : landscape){
-    #image-slide{
-      /*zoom:44.1%;*/
-      /*right:200%;*/
-    }
-  }
-  
-    @media only screen
-  and (min-device-width : 414px)
-  and (max-device-width : 776px){
-    #image-slide{
-      zoom:44.1%;
-      /*right:200%;*/
-    }
-  }
-  
+
   /*iphone 6*/
   @media only screen
   and (min-device-width : 375px)
@@ -85,7 +65,7 @@ and (max-device-width : 1024px)
   and (orientation : portrait){
     #image-slide{
       zoom:48%;
-      right:200%;
+      right:450%;
     }
 }
 
@@ -94,7 +74,7 @@ and (max-device-width : 1024px)
   and (max-device-width : 667px)
   and (orientation : landscape) {
     #image-slide{
-      zoom:48%;
+      /*zoom:48%;*/
       right:200%%;
   }
 }
@@ -125,4 +105,14 @@ and (max-device-width : 480px) {
 
 #img-link, #image-container, #image-slide{
   display:block;
+}
+
+body{
+  background:no-repeat center center fixed;
+  background-position:right bottom;
+  /*width:100%;*/
+  zoom:35%;
+  height:100%;
+  /*background-size:contain;*/
+  /*overflow: hidden;*/
 }

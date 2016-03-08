@@ -15,5 +15,6 @@ setInterval(
   }, 3000);
 
 function changeImg(i){
-  document.getElementById("image-slide").src = "./images/img"+i+".jpg";
+  // document.getElementById("image-slide").src = "./images/img"+i+".jpg";
+  document.body.style.backgroundImage="url('./images/img"+i+".jpg')";
 }
