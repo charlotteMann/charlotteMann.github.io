@@ -52,7 +52,8 @@ and (max-device-width : 1024px) {
   /*iphone 6*/
   @media only screen
   and (min-device-width : 375px)
-  and (max-device-width : 667px) {
+  and (max-device-width : 667px)
+  and (orientation : portrait){
     #image-slide{
       zoom:48%;
       right:450%;
