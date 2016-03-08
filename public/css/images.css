@@ -64,8 +64,8 @@ and (max-device-width : 1024px) {
   and (max-device-width : 667px)
   and (orientation : landscape) {
     #image-slide{
-      zoom:48%;
-      right:450%%;
+      /*zoom:48%;*/
+      right:200%%;
   }
 }
 
