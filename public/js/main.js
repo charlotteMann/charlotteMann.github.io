@@ -1,11 +1,32 @@
 document.getElementById('click-link').onclick = function(){
     document.getElementById('click-container').style.display="none";
-    document.getElementById('imagesJs').src="public/js/images.js";
+    // document.getElementById('imagesJs').src="public/js/images.js";
     document.getElementById('stylesheet').href="public/css/images.css";
 
 
     makeFullscreen();
     $(document).blur();
+
+    var i=2;
+
+    changeImg(1);
+
+    setInterval(
+      function(){
+        if(i<=4){
+          changeImg(i++);
+          console.log(i);
+        } else {
+            i=1;
+            changeImg(i);
+            console.log(i);
+        }
+      }, 3000);
+
+    function changeImg(i){
+      // document.getElementById("image-slide").src = "./images/img"+i+".jpg";
+      document.body.style.backgroundImage="url('./images/img"+i+".jpg')";
+    }
 };
 
 // setInterval(
