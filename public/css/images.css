@@ -55,7 +55,7 @@ and (max-device-width : 1024px) {
   and (max-device-width : 667px) {
     #image-slide{
       zoom:48%;
-      right:400%;
+      right:450%;
     }
 }
 /*iphone portrait and landscape*/
@@ -64,7 +64,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
   #image-slide{
     zoom:46%;
-    right:400%;
+    right:450%;
   }
 }
 
