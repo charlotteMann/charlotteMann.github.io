@@ -145,8 +145,8 @@ body{
 /*TEMP REMOVNG IPAD*/
 @media (min-width:667px) and (max-width: 1024px) {
   #image-slide{
-    position:absolute;
-    zoom:37.5%;
+    /*position:absolute;*/
+    /*zoom:37.5%;*/
     /*bottom:20;*/
     /*top:50%;*/
     /*right:20;*/
@@ -162,7 +162,7 @@ body{
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
   #image-slide{
-    zoom:43%;
+    zoom:37.5%;
     right:-200%;
   }
 }
@@ -171,7 +171,7 @@ and (max-device-width : 1024px) {
   and (min-device-width : 414px)
   and (max-device-width : 776px) {
     #image-slide{
-      zoom:44.1%;
+      zoom:37.5%;
       right:-200%;
     }
 }
