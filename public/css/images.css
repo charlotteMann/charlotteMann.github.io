@@ -131,7 +131,7 @@ body{
 @media (min-width:667px) and (max-width: 1024px) {
   #image-slide{
     position:absolute;
-    zoom:37.5%;
+    zoom:10%;
     /*bottom:20;*/
     /*top:50%;*/
     /*right:20;*/
@@ -143,10 +143,10 @@ body{
 }
 
 
-@media (min-width:667px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width:667px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #image-slide{
     position:absolute;
-    zoom:10%;
+    zoom:37.5%;
     /*bottom:20;*/
     /*top:50%;*/
     /*right:20;*/
