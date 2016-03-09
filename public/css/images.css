@@ -117,7 +117,8 @@ body{
 @media (max-width: 667px) {
   #image-slide{
     position:absolute;
-    zoom:39.2%;
+    /*zoom:39.2%;*/
+    zoom:10%;
     /*bottom:20;*/
     /*top:50%;*/
     /*right:20;*/
@@ -131,7 +132,7 @@ body{
 @media (min-width:667px) and (max-width: 1024px) {
   #image-slide{
     position:absolute;
-    zoom:10%;
+    zoom:37.5%;
     /*bottom:20;*/
     /*top:50%;*/
     /*right:20;*/
