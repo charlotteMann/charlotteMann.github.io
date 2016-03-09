@@ -113,17 +113,17 @@ body{
   transform:translate(-25%,-10%);
 }
 
- @media (min-width: 1140px) and (max-width:1400px) {
+ @media (min-width: 1140px) and (max-width:1700px) {
   #image-slide{
     transform:translate(-5%,-10%);
     zoom:34%;
   }
 }
 
- @media (min-width: 1600px)and (max-width:1850px) {
+ @media (min-width: 1700px)and (max-width:1850px) {
   #image-slide{
     zoom:30%;
-    transform:translate(-5%,-10%);
+    transform:translate(-15%,-10%);
   }
 }
 
