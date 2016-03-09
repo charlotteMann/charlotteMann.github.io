@@ -117,11 +117,18 @@ body{
  @media (min-width: 1700px) {
   #image-slide{
     transform:translate(-5%,-10%);
-    zoom:36%;
+    zoom:27%;
   }
 }
+ @media (min-width: 1400px) and (max-width: 1700px) {
+  #image-slide{
+    transform:translate(-5%,-10%);
+    zoom:29%;
+  }
+}
+
 /*laptop and bigger monitor*/
- @media (min-width: 1140px) {
+ @media (min-width: 1140px) and (max-width: 1400px)  {
   #image-slide{
     transform:translate(-5%,-10%);
     zoom:37%;
