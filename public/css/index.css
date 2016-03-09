@@ -30,7 +30,7 @@ html, body, #click-container{
 .orientright #shell {
     -webkit-transform: rotate(90deg);
     -webkit-transform-origin:230px 230px;
-} 
+}
 /*
 @media (orientation: portrait) {
   #click {
@@ -64,3 +64,7 @@ html, body, #click-container{
 /*#rotateQ{
   display:none;
 }*/
+
+body {
+  background-size:0;
+}
