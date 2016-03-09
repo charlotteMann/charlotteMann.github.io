@@ -232,3 +232,6 @@ and (max-device-width : 1024px) {
   display:block;
 }
 
+html {
+-webkit-text-size-adjust: none;
+}
