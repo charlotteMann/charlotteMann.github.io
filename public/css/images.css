@@ -117,6 +117,7 @@ body{
  @media (min-width: 1700px) {
   #image-slide{
     transform:translate(-5%,-10%);
+    zoom:36%
   }
 }
  /*html, body {
