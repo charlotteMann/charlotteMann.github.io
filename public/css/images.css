@@ -163,7 +163,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
   #image-slide{
     zoom:43%;
-    right:200%;
+    right:100%;
   }
 }
 
@@ -172,7 +172,7 @@ and (max-device-width : 1024px) {
   and (max-device-width : 776px) {
     #image-slide{
       zoom:44.1%;
-      right:200%;
+      right:100%;
     }
 }
 
@@ -223,10 +223,10 @@ and (max-device-width : 1024px) {
 
 }
 
- html, body {
-   height: 100%;
-   margin: 0;
- }
+ /*html, body {*/
+ /*  height: 100%;*/
+ /*  margin: 0;*/
+ /*}*/
 
 #img-link, #image-container, #image-slide{
   display:block;
