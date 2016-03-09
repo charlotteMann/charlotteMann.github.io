@@ -128,11 +128,10 @@ body{
   }
 }
 
-@media (min-width:667px)
-and (max-width: 1024px) {
+@media (min-width:667px) and (max-width: 1024px) {
   #image-slide{
     position:absolute;
-    zoom:36.2%;
+    zoom:33.2%;
     /*bottom:20;*/
     /*top:50%;*/
     /*right:20;*/
