@@ -114,6 +114,11 @@ body{
   transform:translate(-25%,-10%);
 }
 
+ @media (min-width: 1700px) {
+  #image-slide{
+    transform:translate(-15%,-10%);
+  }
+}
  /*html, body {
    height: 100%;
    margin: 0;
