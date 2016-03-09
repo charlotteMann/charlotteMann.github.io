@@ -1,9 +1,9 @@
 
-
+/*
 body{
   overflow:hidden;
   overflow-x: hidden;
-}
+}*/
 
 /*@media screen
   and (min-device-width: 1200px)
@@ -12,35 +12,35 @@ body{
 
 
   /*screen*/
-  @media only screen
+  /*@media only screen
   and (min-width : 1100px) {
     #image-slide{
       zoom:29%;
       right:5%;
     }
-  }
+  }*/
 
 /*laptop*/
-  #image-slide{
+  /*#image-slide{
     min-height: 120vw;
     min-width: 120vh;
     zoom:37%;
     position: relative;
     right:5%;
     bottom:80%;
-  }
+  }*/
 /*}*/
 
 /*ipad portrait and landscape*/
-@media only screen
+/*@media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
   #image-slide{
     zoom:43%;
     right:200%;
-  }}
+  }}*/
 
-  @media only screen
+  /*@media only screen
   and (min-device-width : 414px)
   and (max-device-width : 776px)
   and (orientation : portrait){
@@ -48,20 +48,20 @@ and (max-device-width : 1024px) {
       zoom:44.1%;
       right:200%;
     }
-  }
-  
-    @media only screen
+  }*/
+
+    /*@media only screen
   and (min-device-width : 414px)
   and (max-device-width : 776px)
   and (orientation : landscape){
     #image-slide{
       zoom:44.1%;
       /*right:200%;*/
-    }
-  }
+    /*}
+  }*/
 
   /*iphone 6*/
-  @media only screen
+  /*@media only screen
   and (min-device-width : 375px)
   and (max-device-width : 667px)
   and (orientation : portrait){
@@ -75,35 +75,50 @@ and (max-device-width : 1024px) {
   and (min-device-width : 375px)
   and (max-device-width : 667px)
   and (orientation : landscape) {
-    #image-slide{
+    #image-slide{*/
       /*zoom:48%;*/
-      right:200%%;
+      /*right:200%%;
   }
-}
+}*/
 
 /*iphone portrait and landscape*/
-@media only screen
+/*@media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
   #image-slide{
     zoom:46%;
     right:450%;
   }
+}*/
+
+body{
+  width:100%;
 }
-
-
 
 
 #image-container{
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  position: relative;
   overflow: hidden;
 }
 
- html, body {
+#image-slide{
+  position:absolute;
+  zoom:33%;
+  bottom:20;
+  /*top:50%;*/
+  right:20;
+    overflow-x: hidden;
+    padding:0;
+  -webkit-transorm:translate(-45%,-10%);
+  transform:translate(-45%,-10%);
+}
+
+ /*html, body {
    height: 100%;
    margin: 0;
- }
+ }*/
 
 #img-link, #image-container, #image-slide{
   display:block;
