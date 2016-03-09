@@ -113,11 +113,18 @@ body{
   -webkit-transorm:translate(-45%,-10%);
   transform:translate(-25%,-10%);
 }
-
+/*mac screen*/
  @media (min-width: 1700px) {
   #image-slide{
     transform:translate(-5%,-10%);
     zoom:36%;
+  }
+}
+/*laptop and bigger monitor*/
+ @media (min-width: 1140px) {
+  #image-slide{
+    transform:translate(-5%,-10%);
+    zoom:37%;
   }
 }
  /*html, body {
