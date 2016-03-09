@@ -115,7 +115,7 @@ body{
 
  @media (min-width: 1140px) and (max-width:1700px) {
   #image-slide{
-    transform:translate(-5%,-10%);
+    transform:translate(-15%,-10%);
     zoom:34%;
   }
 }
@@ -130,9 +130,10 @@ body{
  @media (min-width: 1900px){
   #image-slide{
     zoom:30%;
-    transform:translate(-5%,-10%);
+    transform:translate(0%,-10%);
   }
 }
+
  /*html, body {
    height: 100%;
    margin: 0;
