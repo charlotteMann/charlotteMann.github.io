@@ -203,7 +203,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)  { 
     #image-slide{
     position:absolute;
-    zoom:37.5%;
+    zoom:39.2%;
     /*bottom:20;*/
     /*top:50%;*/
     /*right:20;*/
